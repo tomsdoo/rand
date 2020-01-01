@@ -1,0 +1,12 @@
+{
+  "name": "@tomsd/rand",
+  "version": "1.0.0",
+  "description": "functions returning random values",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "tom",
+  "license": "MIT"
+}
