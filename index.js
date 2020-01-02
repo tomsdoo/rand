@@ -1,3 +1,2 @@
-module.export = function(){
-  console.log("this module is for HTML including. import dist/rand.js");
-};
+import rand from "dist/rand.js";
+this.rand = rand;
