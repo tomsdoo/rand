@@ -1,9 +1,9 @@
 {
   "name": "@tomsd/rand",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "functions returning random values",
   "main": "index.js",
-  "module":"dist/rand.js",
+  "module": "dist/rand.js",
   "scripts": {
     "test": "exit 0"
   },
