@@ -3,11 +3,18 @@
   "version": "1.0.6",
   "description": "functions returning random values",
   "main": "index.js",
-  "module": "dist/rand.js",
+  "module": "src/rand.js",
   "scripts": {
+    "build":"webpack",
     "test": "exit 0"
   },
   "keywords": [],
   "author": "tom",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.4.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
 }
