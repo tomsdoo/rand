@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "functions returning random values",
   "main": "index.js",
+  "module":"dist/rand.js",
   "scripts": {
     "test": "exit 0"
   },
