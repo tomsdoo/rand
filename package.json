@@ -6,13 +6,17 @@
   "module": "src/rand.js",
   "scripts": {
     "build": "webpack",
-    "test": "exit 0"
+    "test": "mocha --require @babel/register test/test.js"
   },
   "keywords": [],
   "author": "tom",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^3.4.1",
+    "mocha": "^7.0.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
