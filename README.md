@@ -8,9 +8,8 @@ npm install @tomsd/rand
 # Usage
 
 ``` js
-import rand from "@tomsd/rand/dist/rand.js";
-// or with bundler...
-// import rand from "@tomsd/rand";
+// with bundler...
+import rand from "@tomsd/rand";
 
 console.log(rand.char());
 console.log(rand.str());
