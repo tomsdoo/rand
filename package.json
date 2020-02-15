@@ -1,6 +1,6 @@
 {
   "name": "@tomsd/rand",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "functions returning random values",
   "main": "index.js",
   "module": "src/rand.js",
