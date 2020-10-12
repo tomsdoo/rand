@@ -1,14 +1,10 @@
 var path = require("path");
 
 module.exports = {
-  // mode:"development",
-  mode:"production",
+  mode:"development",
+  // mode:"production",
   module:{
     rules:[
-      {
-        test:/\.css$/,
-        use:["style-loader","css-loader"]
-      },
       {
         test:/\.ts$/,
         loader:"ts-loader"
@@ -20,11 +16,10 @@ module.exports = {
     modules:["node_modules"]
   },
   entry:{
-    "rand":"./src/use-rand.ts",
-    "rand.esm":"./src/rand.ts"
+    "test":"./test/test.ts"
   },
   output:{
-    path:path.join(__dirname, "dist"),
+    path:path.join(__dirname, "test"),
     filename:"[name].js"
   }
 };
