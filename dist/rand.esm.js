@@ -1,7 +1,0 @@
-!function(t){var r={};function e(n){if(r[n])return r[n].exports;var o=r[n]={i:n,l:!1,exports:{}};return t[n].call(o.exports,o,o.exports,e),o.l=!0,o.exports}e.m=t,e.c=r,e.d=function(t,r,n){e.o(t,r)||Object.defineProperty(t,r,{enumerable:!0,get:n})},e.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},e.t=function(t,r){if(1&r&&(t=e(t)),8&r)return t;if(4&r&&"object"==typeof t&&t&&t.__esModule)return t;var n=Object.create(null);if(e.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:t}),2&r&&"string"!=typeof t)for(var o in t)e.d(n,o,function(r){return t[r]}.bind(null,o));return n},e.n=function(t){var r=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(r,"a",r),r},e.o=function(t,r){return Object.prototype.hasOwnProperty.call(t,r)},e.p="",e(e.s=0)}([function(t,r,e){"use strict";e.r(r);var n=function(){function t(){}return t.char=function(){return String.fromCharCode("a".charCodeAt(0)+Math.floor(26*Math.random()))},t.str=function(r){
-/*!
- * @license rand
- * (c) 2019 tom
- * License: MIT
-*/
-return function(t,r){for(var e=[],n=r||0,o=0;o<t;o++)e.push(o+n);return e}(r||5).map(t.char).join("")},t.id=function(r){return[r||"",t.str(),(new Date).getTime().toString()].join("")},t}();r.default=n}]);

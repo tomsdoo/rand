@@ -3,13 +3,11 @@
   "version": "1.1.2",
   "description": "functions returning random values",
   "main": "dist/rand.js",
-  "module": "dist/rand.esm.js",
-  "types": "types/index.d.ts",
+  "module": "dist/rand.js",
+  "types": "dist/rand.d.ts",
   "scripts": {
-    "maketypes": "cp src/*.d.ts types/",
-    "build": "webpack --config webpack.config.js",
-    "buildtest": "webpack --config webpack.config.test.js",
-    "test": "mocha test/test.js"
+    "test": "mocha --require @babel/register test/test.js",
+    "build":"tsc --build tsconfig.build.json && tsc --build tsconfig.test.json"
   },
   "keywords": [],
   "author": "tom",

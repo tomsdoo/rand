@@ -1,5 +1,5 @@
 "use strict";
-import rand from "../src/rand";
+import rand from "../dist/rand";
 const assert = require("assert");
 
 const loweralphabets = "abcdefghijklmnopqrstuvwxyz";

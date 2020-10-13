@@ -11,9 +11,6 @@ function range(n : number,s ?: number) : number[] {
   }
   return r;
 }
-// function randc(){return String.fromCharCode(("a").charCodeAt(0)+Math.floor(Math.random()*26));}
-// function rands(l){return range(l ? l : 5).map(randc).join("");}
-// function randid(s){return [(s ? s : ""), rands(), (new Date()).getTime()].join("");}
 
 export default class Rand {
   constructor(){
@@ -32,5 +29,3 @@ export default class Rand {
     ].join("");
   }
 }
-
-// export default {char:randc, str:rands, id:randid};
