@@ -1,9 +1,10 @@
 "use strict";
-import rand from "../dist/rand";
+import rand from "../dist/esm/rand";
 const assert = require("assert");
 
 const loweralphabets = "abcdefghijklmnopqrstuvwxyz";
 
+console.log("test for ES modules");
 console.log(`import rand from "@tomsd/rand";`);
 
 describe("rand.char()",function(){

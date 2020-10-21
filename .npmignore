@@ -1,2 +1,9 @@
 node_modules/
 src/
+package-lock.json
+tsconfig.build.base.json
+tsconfig.json
+tsconfig.build.cjs.json
+tsconfig.build.esm.json
+webpack.config.js
+webpack.config.test.js
