@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Rand = void 0;
 /*!
  * @license rand
  * (c) 2019 tom
@@ -30,4 +31,6 @@ class Rand {
         ].join("");
     }
 }
+exports.Rand = Rand;
+;
 exports.default = Rand;

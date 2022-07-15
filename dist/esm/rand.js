@@ -29,4 +29,6 @@ var Rand = /** @class */ (function () {
     };
     return Rand;
 }());
+export { Rand };
+;
 export default Rand;
