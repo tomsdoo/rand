@@ -6,25 +6,17 @@
   "module": "dist/esm/rand.js",
   "types": "dist/esm/rand.d.ts",
   "scripts": {
-    "test": "tsc --build tsconfig.test.json && mocha --require @babel/register test/test.js && mocha test/test2.js",
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register \"test/test.ts\" --timeout 30000",
     "build": "tsc --build tsconfig.build.esm.json && tsc --build tsconfig.build.cjs.json"
   },
   "keywords": [],
   "author": "tom",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.8.3",
     "@types/mocha": "^8.0.3",
     "@types/node": "^14.11.8",
-    "babel-preset-env": "^1.7.0",
-    "css-loader": "^3.4.1",
     "mocha": "^7.0.0",
-    "style-loader": "^1.1.2",
-    "ts-loader": "^8.0.4",
-    "typescript": "^4.0.3",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
