@@ -12,7 +12,7 @@ function range(n : number,s ?: number) : number[] {
   return r;
 }
 
-export default class Rand {
+export class Rand {
   constructor(){
   }
   public static char(){
@@ -28,4 +28,6 @@ export default class Rand {
       (new Date()).getTime().toString()
     ].join("");
   }
-}
+};
+
+export default Rand;
