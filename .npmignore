@@ -3,4 +3,4 @@ src/
 package-lock.json
 tsconfig.base.json
 tsconfig.cjs.json
-tsconfig.build.esm.json
+tsconfig.esm.json
