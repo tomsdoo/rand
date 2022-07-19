@@ -2,5 +2,5 @@ node_modules/
 src/
 package-lock.json
 tsconfig.base.json
-tsconfig.build.cjs.json
+tsconfig.cjs.json
 tsconfig.build.esm.json

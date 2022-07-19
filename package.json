@@ -7,7 +7,7 @@
   "types": "dist/esm/rand.d.ts",
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register \"test/test.ts\" --timeout 30000",
-    "build": "tsc --build tsconfig.build.esm.json && tsc --build tsconfig.build.cjs.json"
+    "build": "tsc --build tsconfig.build.esm.json && tsc --build tsconfig.cjs.json"
   },
   "keywords": [],
   "author": "tom",
