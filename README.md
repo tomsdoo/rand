@@ -1,5 +1,7 @@
 # @tomsd/rand
 
+functions returning random values
+
 ## Installation
 ``` sh
 npm install @tomsd/rand
@@ -7,23 +9,22 @@ npm install @tomsd/rand
 
 # Usage
 
-``` js
-const rand = require("@tomsd/rand").default;
-```
-
-``` js
-// with bundler...
-import rand from "@tomsd/rand";
+``` typescript
+import { Rand } from "@tomsd/rand";
 ```
 
 ``` js
 
-console.log(rand.char());
-console.log(rand.str());
+console.log(Rand.char()); // one character that is in a to z
+
+console.log(Rand.str()); // 5 character string
+
 const length_wanted = 8;
-console.log(rand.str(length_wanted));
-console.log(rand.id());
+console.log(rand.str(length_wanted).length); // 8
+
+console.log(rand.id()); // random string
+
 const prefix_str = "abc";
-console.log(rand.id(prefix_str));
+console.log(rand.id(prefix_str)); // prefixed
 
 ```
