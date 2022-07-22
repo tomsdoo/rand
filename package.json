@@ -1,6 +1,6 @@
 {
   "name": "@tomsd/rand",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "functions returning random values",
   "main": "dist/cjs/rand.js",
   "module": "dist/esm/rand.js",
