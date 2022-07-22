@@ -2,6 +2,12 @@
 
 functions returning random values
 
+![npm](https://img.shields.io/npm/v/@tomsd/rand)
+![NPM](https://img.shields.io/npm/l/@tomsd/rand)
+![npms.io (quality)](https://img.shields.io/npms-io/quality-score/@tomsd/rand)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@tomsd/rand)
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
+
 ## Installation
 ``` sh
 npm install @tomsd/rand
