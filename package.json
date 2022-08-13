@@ -9,6 +9,10 @@
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register \"test/test.ts\" --timeout 30000",
     "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomsdoo/rand.git"
+  },
   "keywords": [],
   "author": "tom",
   "license": "MIT",
