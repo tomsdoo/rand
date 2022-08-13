@@ -1,5 +1,9 @@
+.github/
 node_modules/
 src/
+test/
+.gitignore
+.npmignore
 package-lock.json
 tsconfig.base.json
 tsconfig.cjs.json
