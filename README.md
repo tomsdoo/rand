@@ -21,7 +21,7 @@ import { Rand } from "@tomsd/rand";
 
 ``` js
 
-console.log(Rand.char()); // one character that is in a to z
+console.log(Rand.char()); // one character that is between a and z
 
 console.log(Rand.str()); // 5 character string
 
