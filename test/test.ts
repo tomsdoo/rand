@@ -1,4 +1,4 @@
-import {describe, it } from "mocha";
+import { describe, it } from "mocha";
 import { Rand } from "../src/rand";
 import rand_default from "../src/rand";
 import { strict as assert } from "assert";
@@ -21,7 +21,13 @@ describe("Rand.str()", () => {
   });
 
   it("str() returns some characters", () => {
-    assert(Rand.str().split("").every(function(c){return loweralphabets.indexOf(c) >= 0;}));
+    assert(
+      Rand.str()
+        .split("")
+        .every(function (c) {
+          return loweralphabets.indexOf(c) >= 0;
+        })
+    );
   });
 
   it("str() returns string that has the length as parameter number", () => {
@@ -32,13 +38,15 @@ describe("Rand.str()", () => {
 
 describe("Rand.id()", () => {
   it("id() returns not same as before", () => {
-    const ids = [0,1].map(function(){return Rand.id();});
+    const ids = [0, 1].map(function () {
+      return Rand.id();
+    });
     assert(ids[0] !== ids[1]);
   });
 
   it("id() returns string that starts with the paramete", () => {
     const mystartstr = "teststart";
-    assert.equal(Rand.id(mystartstr).slice(0,mystartstr.length), mystartstr);
+    assert.equal(Rand.id(mystartstr).slice(0, mystartstr.length), mystartstr);
   });
 });
 
