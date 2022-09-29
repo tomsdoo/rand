@@ -1,6 +1,5 @@
 import { describe, it } from "mocha";
 import { Rand } from "../src/rand";
-import rand_default from "../src/rand";
 import { strict as assert } from "assert";
 
 const loweralphabets = "abcdefghijklmnopqrstuvwxyz";
@@ -11,7 +10,7 @@ describe("Rand.char()", () => {
   });
 
   it("char() returns a character", () => {
-    assert(loweralphabets.indexOf(Rand.char()) >= 0);
+    assert(loweralphabets.includes(Rand.char()));
   });
 });
 
@@ -24,9 +23,9 @@ describe("Rand.str()", () => {
     assert(
       Rand.str()
         .split("")
-        .every(function (c) {
-          return loweralphabets.indexOf(c) >= 0;
-        })
+        .every((c) =>
+          loweralphabets.includes(c)
+        )
     );
   });
 
@@ -47,11 +46,5 @@ describe("Rand.id()", () => {
   it("id() returns string that starts with the paramete", () => {
     const mystartstr = "teststart";
     assert.equal(Rand.id(mystartstr).slice(0, mystartstr.length), mystartstr);
-  });
-});
-
-describe("default export", () => {
-  it("rand is also exported as default", () => {
-    assert.equal(rand_default.char().length, 1);
   });
 });
