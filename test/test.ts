@@ -23,9 +23,9 @@ describe("Rand.str()", () => {
     assert(
       Rand.str()
         .split("")
-        .every(function (c) {
-          return loweralphabets.includes(c);
-        })
+        .every((c) =>
+          loweralphabets.includes(c)
+        )
     );
   });
 
