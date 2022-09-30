@@ -27,11 +27,9 @@ export class Rand {
   }
 
   public static id(prefixStr?: string): string {
-    return [
-      prefixStr ?? "",
-      Rand.str(),
-      new Date().getTime().toString(),
-    ].join("");
+    return [prefixStr ?? "", Rand.str(), new Date().getTime().toString()].join(
+      ""
+    );
   }
 }
 
