@@ -35,9 +35,7 @@ describe("Rand.str()", () => {
 
 describe("Rand.id()", () => {
   it("id() returns not same as before", () => {
-    const ids = [0, 1].map(function () {
-      return Rand.id();
-    });
+    const ids = [0, 1].map(() => Rand.id());
     assert(ids[0] !== ids[1]);
   });
 
