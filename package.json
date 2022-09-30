@@ -21,7 +21,7 @@
       "npm run format:src"
     ],
     "test/**/*.ts": [
-      "npm run lint:src",
+      "npm run lint:test",
       "npm run format:test"
     ]
   },
