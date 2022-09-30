@@ -39,6 +39,13 @@ describe("Rand.id()", () => {
     assert(ids[0] !== ids[1]);
   });
 
+  it("id() returns values that are unique in calles of multiple times", () => {
+    const countOfTimes = 10;
+    const values = [...Array(countOfTimes).keys()].map((i) => Rand.id());
+    const valueSet = new Set(values);
+    assert.equal(valueSet.size, countOfTimes);
+  });
+
   it("id() returns string that starts with the paramete", () => {
     const mystartstr = "teststart";
     assert.equal(Rand.id(mystartstr).slice(0, mystartstr.length), mystartstr);
